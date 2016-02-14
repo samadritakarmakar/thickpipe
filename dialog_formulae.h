@@ -15,6 +15,9 @@ public:
     explicit Dialog_formulae(QWidget *parent = 0);
     ~Dialog_formulae();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Dialog_formulae *ui;
 };

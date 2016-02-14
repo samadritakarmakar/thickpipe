@@ -6,9 +6,15 @@ Dialog_formulae::Dialog_formulae(QWidget *parent) :
     ui(new Ui::Dialog_formulae)
 {
     ui->setupUi(this);
+    this->setWindowTitle("formulae used");
 }
 
 Dialog_formulae::~Dialog_formulae()
 {
     delete ui;
+}
+
+void Dialog_formulae::on_pushButton_clicked()
+{
+    this->close();
 }

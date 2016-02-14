@@ -1,8 +1,7 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef MAINWINDOW2_H
+#define MAINWINDOW2_H
 
 #include <QMainWindow>
-#include <QString>
 
 namespace Ui {
 class MainWindow;
@@ -16,15 +15,8 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-private slots:
-    void on_pushButton_clicked();
-
-    void on_action_Formulae_triggered();
-
-    void on_actionAbout_triggered();
-
 private:
     Ui::MainWindow *ui;
 };
 
-#endif // MAINWINDOW_H
+#endif // MAINWINDOW2_H
