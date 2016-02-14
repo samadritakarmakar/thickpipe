@@ -20,6 +20,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
+
     float p=ui->pr->text().toFloat();
     float d=ui->od->text().toFloat();
     float a=ui->df->text().toFloat();
@@ -35,6 +36,7 @@ void MainWindow::on_pushButton_clicked()
     ui->to_is->setText(QString::number(tois,'f',2));
     ui->to_din->setText(QString::number(tmd,'f',2));
     ui->to_asme->setText(QString::number(tma,'f',2));
+
 }
 
 void MainWindow::on_action_Formulae_triggered()
