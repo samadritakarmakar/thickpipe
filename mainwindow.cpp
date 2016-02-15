@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 #include "dialog_formulae.h"
 #include "about.h"
-
+#include "error_dialog.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -36,6 +36,12 @@ void MainWindow::on_pushButton_clicked()
     ui->to_is->setText(QString::number(tois,'f',2));
     ui->to_din->setText(QString::number(tmd,'f',2));
     ui->to_asme->setText(QString::number(tma,'f',2));
+    if(tois>=d/2 || tmd >=d/2 || tma >= d/2)
+    {
+        error_dialog *b =new error_dialog;
+        b->setWindowModality(Qt::ApplicationModal);
+        b->show();
+    }
 
 }
 

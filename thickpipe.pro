@@ -15,12 +15,15 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     dialog_formulae.cpp \
-    about.cpp
+    about.cpp \
+    error_dialog.cpp
 
 HEADERS  += mainwindow.h \
     dialog_formulae.h \
-    about.h
+    about.h \
+    error_dialog.h
 
 FORMS    += mainwindow.ui \
     dialog_formulae.ui \
-    about.ui
+    about.ui \
+    error_dialog.ui
