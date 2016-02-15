@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->setWindowTitle("thickpipe");
+    this->setWindowTitle("thickpipe v0.1.2");
 }
 
 MainWindow::~MainWindow()
